@@ -1,0 +1,579 @@
+* Declare any variables and you can set it to a interger, decimal,or letter.*
+
+//declarations
+int z;
+int y;          *Declare letters as an interger
+int x;
+z = randint(1,50);   * random intergers that go through a specific range of numbers *
+y = randint(60,100);
+#include <chplot.h>       * Key element to start a picture. Let's the program runs.
+//declarations
+string_t a,b,c;
+string_t ans;           * Decalrations of a letter, you can called "a" a word.
+string_t ans1;
+void s(){
+    sleep(1);          * Pause in the code. 
+}
+//OUTPUT
+void Intro(){         * A declaration of a line of code, to run it, you must put it an if else statement.              
+    printf("First Part:\n");
+    s();
+    printf("You're are an unfortunate person with no wealth.\n");         * Print out the following words.
+    s();
+    printf("Your life is miserable and will end if you don't survive.\n");
+    s();                                                                      * a sleep function
+    printf("It had been 5 years since you've been on the street,\n");
+    s();
+    printf("Your clothes have been ripped and tore.\n");
+    s();
+    printf("You haven't showered in weeks.\n");
+    s();
+    printf("You started to become hungry and need money.\n");
+    printf("\n");
+    s();
+    printf("Type in command word: alpha, beta, omega to proceed.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans1);
+}
+void Decide(){
+    printf("\n");
+    s();
+    printf("Second Part:\n");
+    s();
+    printf("Today is December 21,2018.\n");
+    s();
+    printf("You are now thinking on how you should spend your day.\n");
+    s();
+    printf("Choose your choice.\n");
+    printf("\n");
+    s();
+    printf("a for choice 1, b for choice 2, c for choice 3.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void Incorrect(){
+    printf("\n");
+    printf("Not the correct command word.\n");
+    printf("Please enter alpha,beta,or omega.\n");
+    scanf("%s",&ans1);
+}
+void incorrectOne(){
+    printf("\n");
+    printf("Not a valid choice.\n");
+    printf("Enter a,b,or c.\n");
+    scanf("%s",&ans);
+}
+void Graph(){
+    CPlot plot;
+    
+    plot.label(PLOT_AXIS_X, "x,20");
+    plot.label(PLOT_AXIS_Y, "y,10");
+    plot.axisRange(PLOT_AXIS_X,0,20);
+    plot.axisRange(PLOT_AXIS_Y,0,10);
+
+    plot.sizeRatio(10/10);
+    plot.strokeWidth(2);
+    
+    plot.fillColor("#F5CBA7");
+    plot.strokeColor("black");
+    plot.circle(10,5,5);
+    
+    plot.fillColor("black");
+    plot.strokeColor("black");
+    plot.circle(7,6,1);
+    
+    plot.fillColor("black");
+    plot.strokeColor("black");
+    plot.circle(12,6,1);
+    
+    plot.fillColor("black");
+    plot.strokeColor("black");
+    plot.circle(10,4,2.5);
+    
+    plot.plotting();
+}
+void choiceOne(){
+    printf("\n");
+    printf("You decide to find work.\n");
+    s();
+    printf("You have three choices on where to work.\n");
+    printf("\n");
+    s();
+    printf("McDonalds,Starbucks,Police Officer.\n");
+    printf("\n");
+    s();
+    printf("Enter mcdonalds to work at McDonalds.\n");
+    s();
+    printf("Enter starbucks to work at Starbucks.\n");
+    s();
+    printf("Enter police to work at the police station.\n");
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceTwo(){
+    printf("\n");
+    printf("You decide to beg for money.\n");
+    s();
+    printf("There's 3 people walking nearby you.\n");
+    s();
+    printf("Which person will you ask?\n");
+    printf("\n");
+    s();
+    printf("personOne to talk to the man.\n");
+    s();
+    printf("personTwo to talk to old lady.\n");
+    s();
+    printf("personThree to talk to woman.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceThree(){
+    printf("\n");
+    printf("You decide to kill yourself.\n");
+    s();
+    printf("There's three ways you can think of to kill yourself.\n");
+    s();
+    printf("\n");
+    s();
+    printf("Drown in the park fountian = killOne\n");
+    s();
+    printf("Slit your throat = killTwo\n");
+    s();
+    printf("Jump of a building = killThree\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceFour(){
+    printf("\n");
+    s();
+    printf("You decide to work at McDonalds.\n");
+    s();
+    printf("You fill an application and went to \n");
+    s();
+    printf("an interview. You got the job!\n");
+    s();
+    printf("You recieve a minimum pay wage for working at McDonalds.\n");
+    s();
+    printf("Type d to reach your ending point.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceFive(){
+    printf("\n");
+    s();
+    printf("You decide to work at Starbucks.\n");
+    s();
+    printf("You fill an appilcation for Starbucks.\n");
+    s();
+    printf("Type in e to see the result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceSix(){
+    printf("\n");
+    s();
+    printf("You decide to become a police officer.\n");
+    s();
+    printf("You fill an application.\n");
+    s();
+    printf("The cheif wanted an interview first.\n");
+    s();
+    printf("Type f to see the result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceSeven(){
+    printf("\n");
+    s();
+    printf("You walk towards the man.\n");
+    s();
+    printf("He looks like an average man.\n");
+    s();
+    printf("He looked at you and said,\n");
+    s();
+    printf("What do you want?\n");
+    s();
+    printf("You replied,\n");
+    s();
+    printf("Please sir, can I have some spare change...\n");
+    s();
+    printf("He shook his head and held out his empty wallet.\n");
+    s();
+    printf("Type g to see end result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceEight(){
+    printf("\n");
+    s();
+    printf("You approached slowly towards the old lady\n");
+    s();
+    printf("You tried not to frighten her.\n");
+    s();
+    printf("You ask her if you can walk her across the street.\n");
+    s();
+    printf("\n");
+    s();
+    printf("Type in h to see end result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceNine(){
+    printf("\n");
+    s();
+    printf("You slowly approached the woman.\n");
+    s();
+    printf("She looked at you and asked,\n");
+    s();
+    printf("Can I help you with something?\n");
+    s();
+    printf("You said,\n");
+    s();
+    printf("Money?\n");
+    s();
+    printf("She reached into her purse,\n");
+    s();
+    printf("\n");
+    s();
+    printf("Type i to see end result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceTen(){
+    printf("\n");
+    s();
+    printf("You decide to drown yourself.\n");
+    s();
+    printf("You plunged your head into the fountain.\n");
+    s();
+    printf("You began to count the seconds since\n");
+    s();
+    printf("since your head went underwater.\n");
+    s();
+    printf("%d seconds\n",z);
+    s();
+    printf("AND\n");
+    s();
+    printf("%d seconds\n",y);
+    s();
+    printf("\n");
+    s();
+    printf("Type in j to see end result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceEleven(){
+    printf("\n");
+    s();
+    printf("You smashed a glass bottle.\n");
+    s();
+    printf("You grab a sharp edge of the broken bootle.\n");
+    s();
+    printf("You slitted your neck.\n");
+    s();
+    printf("\n");
+    s();
+    printf("Type in k to see end result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void choiceTwelve(){
+    printf("\n");
+    s();
+    printf("You decide to make it quick.\n");
+    s();
+    printf("To make a long story short....");
+    s();
+    printf("To make a long story short....");
+    s();
+    printf("To make a long story short....");
+    s();
+    printf("\n");
+    s();
+    printf("Type in l to see end result.\n");
+    s();
+    printf("\n");
+    scanf("%s",&ans);
+}
+void endOne(){
+    s();
+    printf("The work is hard for you.\n");
+    s();
+    printf("But at least you can eat everday.\n");
+    s();
+    printf("This is not a happy ending.\n");
+    s();
+    printf("Your life is still bad.\n");
+    s();
+    printf("\n");
+    s();
+    printf("The End!\n");
+}
+void endTwo(){
+    printf("\n");
+    s();
+    printf("You got the job!");
+    s();
+    printf("You started your first shift and failed...\n");
+    s();
+    printf("\n");
+    s();
+    printf("Because\n");
+    s();
+    printf("You were too slow and it was during rush hour.\n");
+    s();
+    printf("Once again..\n");
+    s();
+    printf("you are alone..\n");
+    s();
+    printf("in the street..\n");
+    s();
+    printf("with no money.\n");
+    printf("\n");
+    s();
+    printf("The End!");
+}
+void endThree(){
+    printf("\n");
+    s();
+    printf("You enter the station and was..\n");
+    s();
+    printf("spotted by an officer that...\n");
+    s();
+    printf("immediately knew who you were.\n");
+    s();
+    printf("\n");
+    s();
+    printf("Who was the officer?\n");
+    s();
+    printf("Type in 'Officer' first.\n");
+    s();
+    printf("Then type in desired name.\n");
+    s();
+    scanf("%s",&ans);
+    s();
+    printf("You ended up out on the street because..\n");
+    s();
+    printf("you commitited petty theft some few weeks ago,\n");
+    s();
+    printf("\n");
+    s();
+    printf("The End!");
+}
+void endFour(){
+    printf("\n");
+    s();
+    printf("You saw on the curve of the sidewalk.\n");
+    s();
+    printf("Your stomach starts to growl.\n");
+    s();
+    printf("You begin to feel light-headed from the lack of food.\n");
+    s();
+    printf("Maybe tommorrow you get some money.\n");
+    printf("\n");
+    s();
+    printf("The End!");
+} 
+void endFive(){
+    printf("\n");
+    s();
+    printf("She thanked you after she cross the street.\n");
+    s();
+    printf("You recieved twenty bucks.\n");
+    s();
+    printf("You realized that she was the old lady\n");
+    s();
+    printf("that helped you before.\n");
+    s();
+    printf("What is the old lady's name?\n");
+    s();
+    printf("Type in her name.\n");
+    s();
+    scanf("%s",&ans);
+    s();
+    printf("You thanked her and treated yourself with some food.\n");
+    s();
+    printf("The End!\n");
+    s();
+}
+void endSix(){
+    printf("\n");
+    s();
+    printf("She pulled out a 20 dollar bill..\n");
+    s();
+    printf("She handed it to you.\n");
+    s();
+    printf("\n");
+    s();
+    printf("You thanked her and she cross the street.\n");
+    s();
+    printf("You quickly went off to buy some food.\n");
+    s();
+    printf("The End!\n");
+}
+void endSeven(){
+    printf("\n");
+    s();
+    printf("Your lungs felt like it's been compressed.\n");
+    s();
+    printf("The supply of oxygen is cutting short,\n");
+    s();
+    printf("Your eyes are starting to close.\n");
+    s();
+    printf("You sank into the darkness.\n");
+    s();
+    printf("\n");
+    s();
+    printf("The End!");
+}
+void endEight(){
+    printf("\n");
+    s();
+    printf("With the pain entering your body,\n");
+    s();
+    printf("your breath becomes shallow and labrored.\n");
+    s();
+    printf("You collapsed on the ground.\n");
+    s();
+    printf("And let the blood run out.\n");
+    s();
+    printf("\n");
+    s();
+    printf("The End!");
+}
+void endNine(){
+    printf("\n");
+    s();
+    printf("You are staring down at the ground below.\n");
+    s();
+    printf("Your palms began to sweat and you\n");
+    s();
+    printf("are thinking if this is a good idea.\n");
+    s();
+    printf("You jumped.\n");
+    s();
+    printf("\n");
+    s();
+    printf("The End!");
+}
+int main(){
+    Intro();
+    while(ans1 != "alpha" && ans1 != "beta" && ans1 != "omega"){
+            Incorrect();
+    }
+        if(ans1 == "alpha"){
+            Decide();
+        }
+        if(ans1 == "beta"){
+            Decide();
+        }
+        if(ans1 == "omega"){
+            Decide();
+        }
+    while(ans != "a" && ans != "b" && ans != "c"){
+            incorrectOne();
+    }
+        if(ans == "a"){
+            choiceOne();
+        }
+        if(ans == "b"){
+            choiceTwo();
+        }
+        if(ans == "c"){
+            choiceThree();
+        }
+    if(ans == "mcdonalds"){
+        choiceFour();
+    }
+    if(ans == "starbucks"){
+        choiceFive();
+    }
+    if(ans == "police"){
+        choiceSix();
+    }
+    if(ans == "personOne"){
+        choiceSeven();
+    }
+    if(ans == "personTwo"){
+        choiceEight();
+    }
+    if(ans == "personThree"){
+        choiceNine();
+    }
+    if(ans == "killOne"){
+        choiceTen();
+    }
+    if(ans == "killTwo"){
+        choiceEleven();
+    }
+    if(ans == "killThree"){
+        choiceTwelve();
+    }
+    if(ans == "d"){
+        endOne();
+    }
+    if(ans == "e"){
+        endTwo();
+    }
+    if(ans == "f"){
+        endThree();
+    }
+    if(ans == "g"){
+        endFour();
+    }
+    if(ans == "h"){
+        endFive();
+    }
+    if(ans == "i"){
+        endSix();
+    }
+    if(ans == "j"){
+        endSeven();
+    }
+    if(ans == "k"){
+        endEight();
+    }
+    if(ans == "l"){
+        endNine();
+    }
+    if(ans == "d"){
+        Graph();
+    }
+    if(ans == "e"){
+        Graph();
+    }
+    if(ans == "f"){
+        Graph();
+    }
+    if(ans == "g"){
+        Graph();
+    }
+    if(ans == "h"){
+        Graph();
+    }
+    if(ans == "i"){
+        Graph();
+    }
+    if(ans == "j"){
+        Graph();
+    }
+    if(ans == "k"){
+        Graph();
+    }
+    if(ans == "l"){
+        Graph();
+    }
+}
+
