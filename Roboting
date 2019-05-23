@@ -1,0 +1,38 @@
+#include <linkbot.h>
+CLinkbotI bob;
+CLinkbotI rob;
+CLinkbotI sob;
+CLinkbotIGroup group;
+group.addRobot(bob);
+group.addRobot(rob);
+group.addRobot(sob);
+
+//Stage 1
+group.setLEDColor("purple");
+group.driveDistance(3,2);
+group.setLEDColor("green");
+group.turnLeft(300,2,3.69);
+group.driveDistance(5,2);
+sleep(5);
+//Stage 2
+group.setLEDColor("blue");
+group.turnLeft(300,2,3.69);
+group.driveDistance(3,2);
+group.setLEDColor("red");
+group.turnRight(540,2,3.69);
+group.driveDistance(3,2);
+sleep(5);
+//Stage 3
+group.setLEDColor("orange");
+group.turnLeft(270,2,3.69);
+bob.setJointSpeeds(270,NaN,-200);
+bob.moveTime(2.5);
+rob.setJointSpeeds(270,NaN,-200);
+rob.moveTime(2.5);
+sob.setJointSpeeds(270,NaN,-200);
+sob.moveTime(2.5);
+group.setLEDColor("yellow");
+group.turnLeft(90,2,3.69);
+group.driveDistance(3,2);
+group.setLEDColor("white");
+group.turnRight(360,2,3.69);
